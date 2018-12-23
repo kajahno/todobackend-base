@@ -25,3 +25,5 @@ RUN virtualenv /appenv && \
 ADD scripts/entrypoint.bash /usr/local/bin/entrypoint.bash
 RUN chmod +x /usr/local/bin/entrypoint.bash
 ENTRYPOINT [ "entrypoint.bash" ]
+
+LABEL application="todobackend"
